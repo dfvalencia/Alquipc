@@ -66,13 +66,28 @@ section .caja_producto .producto .nombre_servicio{
     text-align: center;
     color: #414446;
 }
+section .caja_producto .producto .boton{
+    text-align: center;
+    margin-top: 3rem;
+}
 section .caja_producto .producto .boton a{
     width: 150px;
     height: 35px;
     color: white;
     background-color: #ff3259;
-    padding-left: 1rem;
-
-
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+        text-decoration: none;
 }
 
