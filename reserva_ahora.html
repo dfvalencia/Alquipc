@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reservas.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>RESERVAS</title>
 </head>
 
@@ -20,16 +21,52 @@
         </div>
     </header>
     <section>
-        <div class="titulo">
+        <div class="titulo-reservar">
             <h1><b>Reservar Ahora</b></h1>
         </div>
         <div class="container">
             <div class="formulario">
-
+                <form action="" method="get">
+                    <label for="Nombre">Nombre: </label>
+                    <input type="text"><br><br>
+                    <label for="ciudad">Ciudad: </label>
+                    <select id="country" name="country">
+                        <option value="bogota">Bogotá</option>
+                        <option value="cali">Cali</option>
+                        <option value="medellin">Medellin</option>
+                        <option value="santander">Santander</option>
+                        <option value="barranquilla">Barranquilla</option>
+                      </select><br>
+                    <label for="date">Cuando inicia tu reservación</label>
+                    <input type="date"><br><br>
+                    <label for="dias">Que cantidad de dias deseas reservar?</label>
+                    <input type="number"><br><br>
+                    <div class="confir" id="confirmLink"><a href="">CONFIRMAR</a></div> 
+                </form>
             </div>
-            <form action="" method="get"></form>
         </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <i class='bx bx-check-circle bx-tada bx-rotate-180' ></i><br>
+                Reserva confirmada
+            </div>
+          </div>
     </section>
+<script>
+document.getElementById("confirmLink").addEventListener("click", function(event) {
+  event.preventDefault();
+  
+  var modal = document.getElementById("modal");
+  modal.style.display = "flex"; // Cambiar a "flex" para mostrar el modal
+  
+  setTimeout(function() {
+    modal.style.display = "none"; // Ocultar el modal después de 3 segundos
+  }, 1500);
+});
+
+</script>
 </body>
 
 </html>
+
+  
