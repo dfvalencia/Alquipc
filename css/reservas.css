@@ -3,6 +3,7 @@ body{
     padding: 0;
 }
 header{
+    margin-top: 10px;
     min-height: 70px;
     width: 100%;
     background-color: #e0eaf7;  
