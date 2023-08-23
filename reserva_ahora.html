@@ -53,6 +53,14 @@
           </div>
     </section>
     <script>
+        //validación fecha reserva
+        var currentDate = new Date();
+        var minDate = new Date(currentDate);
+        minDate.setDate(currentDate.getDate() + 0);
+        var minDateFormatted = minDate.toISOString().slice(0, 10);
+        var dateInput = document.querySelector("input[type='date']");
+        dateInput.setAttribute("min", minDateFormatted);
+
         document.getElementById("confirmLink").addEventListener("click", function (event) {
             event.preventDefault();
 
