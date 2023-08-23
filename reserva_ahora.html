@@ -52,19 +52,29 @@
             </div>
           </div>
     </section>
-<script>
-document.getElementById("confirmLink").addEventListener("click", function(event) {
-  event.preventDefault();
-  
-  var modal = document.getElementById("modal");
-  modal.style.display = "flex"; // Cambiar a "flex" para mostrar el modal
-  
-  setTimeout(function() {
-    modal.style.display = "none"; // Ocultar el modal después de 3 segundos
-  }, 1500);
-});
+    <script>
+        document.getElementById("confirmLink").addEventListener("click", function (event) {
+            event.preventDefault();
 
-</script>
+            // Validación de campos
+            var nombre = document.querySelector("input[type='text']").value;
+            var ciudad = document.querySelector("select").value;
+            var fecha = document.querySelector("input[type='date']").value;
+            var dias = document.querySelector("input[type='number']").value;
+
+            if (nombre === "" || ciudad === "" || fecha === "" || dias === "") {
+                alert("Por favor, complete todos los campos requeridos.");
+                return;
+            }
+
+            var modal = document.getElementById("modal");
+            modal.style.display = "flex"; // Cambiar a "flex" para mostrar el modal
+
+            setTimeout(function () {
+                modal.style.display = "none"; // Ocultar el modal después de 3 segundos
+            }, 1500);
+        });
+    </script>
 </body>
 
 </html>
