@@ -215,7 +215,36 @@ section .caja_producto .producto .boton a{
     color: #ff3259;
   }
   /*CODIGO PARA EL CARRITO*/
-  
+  section .usuario{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  section .container-car{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  section .container-car .compra{
+    width: 80%;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  section .container-car .compra table{
+    width: 100%;
+  }
+  section .container-car .compra table .ciudad,
+  section .container-car .compra table .dias,
+  section .container-car .compra table .fecha,
+  section .container-car .compra table .cant-equipos,
+  section .container-car .compra table .total{
+    text-align: center;
+  }
+  section .container-car .compra table .nombre{
+    padding-left: 26px;
+    text-transform: capitalize;
+  }
   
   
 
